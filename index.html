@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Al-Faruq</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Naskh+Arabic:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+      }
+      .font-arabic {
+        font-family: 'Noto Naskh Arabic', serif;
+        font-weight: 400;
+        font-size: 1.875rem;
+        line-height: 2.8rem;
+      }
+      /* Tajweed Color Styles */
+      div.tajweed-verse span.ham_wasl, div.tajweed-verse span.slnt, div.tajweed-verse span.laam_shamsiyyah { color: inherit !important; }
+      div.tajweed-verse span.ghunnah { color: #FF6E40 !important; } /* Bright Orange */
+      div.tajweed-verse span.idgham_ghunnah, div.tajweed-verse span.idgham_wo_ghunnah, div.tajweed-verse span.idgham_mutajanisayn, div.tajweed-verse span.idgham_mutaqaribayn { color: #69F0AE !important; } /* Green */
+      div.tajweed-verse span.ikhfa, div.tajweed-verse span.ikhfa_shafawi { color: #18FFFF !important; } /* Cyan */
+      div.tajweed-verse span.iqlab { color: #B388FF !important; } /* Purple */
+      div.tajweed-verse span.qalqalah { color: #448AFF !important; } /* Blue */
+      div.tajweed-verse span.madd_2 { color: #A7FFEB !important; } /* Teal */
+      div.tajweed-verse span.madd_3, div.tajweed-verse span.madd_4, div.tajweed-verse span.madd_5, div.tajweed-verse span.madd_6 { color: #EC407A !important; } /* Pink */
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.26.0",
+    "react-markdown": "https://esm.sh/react-markdown@9?bundle",
+    "remark-gfm": "https://esm.sh/remark-gfm@4?bundle"
+  }
+}
+</script>
+</head>
+  <body class="bg-white transition-colors duration-300">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
